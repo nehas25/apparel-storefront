@@ -1,13 +1,12 @@
 const express = require('express');
 const router = express.Router();
 
-
-
-
-// GET Items New
+//Create route
 router.get('/new', (req, res) => {
-    
-});
+    res.render('items/itemsNew');  
+})
+
+
 
 
 
