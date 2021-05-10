@@ -10,7 +10,10 @@ const db = require('./models');
 // Config
 app.set('view engine', 'ejs');
 
+
 //Middleware
+app.use(express.static(__dirname + '/public'));
+
 //parse request body
 app.use(express.urlencoded( { extended: false }));
 
