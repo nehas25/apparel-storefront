@@ -8,7 +8,7 @@
     <title>Fasion Store</title>
 </head>
 <body>
-    <a href="/"><h1>Fasion Store</h1></a>
+    <%- include('partials/header') %>
     <a href="/items/<%= foundItem._id %>/edit">Edit</a>
     <form action="/items/<%= foundItem._id %>?_method=DELETE" method="POST">
         <button type="submit">Delete</button>
