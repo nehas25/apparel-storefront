@@ -8,27 +8,28 @@
 </head>
 <body>
     <main>
-        <form action="">
+        <form action="/items" method="POST">
             <div>
-                <img src="" alt="">
+                <label for="item-image-url">Item Image Url</label>
+                <input type="text" id="item-image-url" name="imgUrl" required>
             </div>
             <div>
                 <label for="item-name">Item Name</label>
-                <input type="text" id="item-name">
+                <input type="text" id="item-name" name="name" required>
             </div>
             <div>
                 <label for="item-description">Description</label>
-                <input type="text" id="item-description">
+                <textarea id="item-description" name="description" rows="4" cols="50"></textarea>
             </div>
             <div>
                 <label for="item-price">Price</label>
-                <input type="text" id="item-price">
+                <input type="text" id="item-price" name="price" required>
             </div>
             <button type="submit">Submit</button>
-            <a href="/">
-                <button>Cancel</button>
-            </a>
         </form>
+        <a href="/">
+            <button>Cancel</button>
+        </a>
     </main>
 </body>
 </html>

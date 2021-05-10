@@ -10,5 +10,18 @@
     <h1>Home</h1>
 
     <a href="/items/new">add</a>
+    <% for(let i=0; i<allItems.length; i++) { %>
+        <div class="itemTile">
+            <div>
+                <a href="/items/<%= allItems[i]._id %>">
+                    <img src="<%= allItems[i].imgUrl %>" alt="" style="width:200px; height:250px">
+                </a>
+            </div>
+            <div>
+                <a class="itemName" href="/items/<%= allItems[i]._id %>"><%= allItems[i].name %></a>
+                <div class="price"><%= allItems[i].price %></div>
+            </div>
+        </div>
+    <% } %>
 </body>
 </html>
